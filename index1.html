@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeRoute AI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h2>SafeRoute AI</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#chat">AI Assistant</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Your AI Safety Companion</h1>
+
+            <p>
+                Stay safe anywhere with instant SOS,
+                live location sharing, nearby emergency
+                services, and Google Gemini AI guidance.
+            </p>
+
+            <button class="start-btn">
+                Get Started
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <i class="fa-solid fa-user-shield big-icon"></i>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+
+        <h2>Emergency Features</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>SOS Alert</h3>
+                <p>
+                    Send an instant emergency alert
+                    with one tap.
+                </p>
+
+                <button id="sosBtn">
+                    Activate SOS
+                </button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Live Location</h3>
+
+                <p>
+                    Share your real-time location
+                    with trusted contacts.
+                </p>
+
+                <button id="locationBtn">
+                    Share Location
+                </button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <h3>Nearby Help</h3>
+
+                <p>
+                    Find nearby hospitals,
+                    police stations and pharmacies.
+                </p>
+
+                <button id="nearbyBtn">
+                    Find Help
+                </button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-microphone"></i>
+
+                <h3>Voice SOS</h3>
+
+                <p>
+                    Activate emergency mode
+                    using voice commands.
+                </p>
+
+                <button id="voiceBtn">
+                    Start Listening
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI Chat -->
+    <section id="chat" class="chat-section">
+
+        <h2> AI Safety Assistant</h2>
+
+        <div class="chat-box">
+
+            <div id="messages">
+
+                <div class="bot-message">
+                    👋 Hello! I'm SafeRoute AI.
+                    How can I help you today?
+                </div>
+
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Describe your emergency..."
+                >
+
+                <button id="sendBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+              
+            <div class="route-advisor">
+    <h2>🛡️ AI Safe Route Advisor</h2>
+
+    <input type="text" id="fromLocation" placeholder="From">
+
+    <input type="text" id="toLocation" placeholder="To">
+
+    <button id="routeBtn">Analyze Route</button>
+
+    <div id="routeResult"></div>
+    <div id="map"></div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SafeRoute AI |
+            Built for MLH Hack Day using Google Gemini
+        </p>
+
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script1.js"></script>
+
+</body>
+</html>
